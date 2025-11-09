@@ -146,6 +146,182 @@
         "name": "assets\\StartingPixelObstacle.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Arts/Sprites/Robo/Robo_Down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Arts/Sprites/Robo/Robo_Down.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Arts/Sprites/Robo/Robo_Left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Arts/Sprites/Robo/Robo_Left.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Arts/Sprites/Robo/Robo_Right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Arts/Sprites/Robo/Robo_Right.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Arts/Sprites/Robo/Robo_Up.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Arts/Sprites/Robo/Robo_Up.png\",\"extension\":\".png\"}",
+        "name": "assets/Arts/Sprites/Robo/Robo_Up.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player_up.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "player_up",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/player_up2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "player_up2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/robo_down.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "robo_down",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/robo_down2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "robo_down2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Up.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Up",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Up2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Up2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/robo.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "robo",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/robo2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "robo2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Right.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Right2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Right2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle_Down",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Down2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle_Down2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_UP.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle_UP",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_UP2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle_UP2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle_Left",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Left2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle_Left2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Right.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle_Right",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle_Right2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle_Right2",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -177,7 +353,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.1726229638177712,
+        "zoomFactor": 4.41855940585544,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -186,264 +362,17 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
           "keepRatio": true,
           "layer": "",
-          "name": "TopDown_Character",
-          "persistentUuid": "ebd4e918-fdc8-4c06-baef-2e0f46c2cfd5",
-          "width": 0,
-          "x": 624,
-          "y": 352,
+          "name": "robo",
+          "persistentUuid": "a199a3be-23f5-479f-ad75-64bfccab15e4",
+          "width": 64,
+          "x": 539,
+          "y": 342,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 430.18181818181813,
-          "keepRatio": true,
-          "layer": "",
-          "locked": true,
-          "name": "Ground_Tilemap",
-          "persistentUuid": "140c37d7-fd0a-4882-83ed-142e8f549ba8",
-          "width": 728,
-          "x": 288,
-          "y": 160,
-          "zOrder": -2,
-          "numberProperties": [],
-          "stringProperties": [
-            {
-              "name": "tilemap",
-              "value": "{\"tileWidth\":64,\"tileHeight\":64,\"dimX\":22,\"dimY\":13,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,3,7,7,7,7,7,7,7,7,7,7,7,7,7,7,5,0,0,0],[0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,2],[0,0,0,7,7,0,0,0,0,0,0,0,0,0,0,2,0,7,7,0,0,0],[0,2,0,7,7,0,1,2,0,1,0,0,0,0,2,0,0,7,7,0,0,0],[0,0,0,7,7,0,0,0,0,0,0,0,0,0,0,0,0,7,7,0,0,0],[0,0,0,7,7,0,0,0,0,0,0,0,0,0,0,1,0,7,7,0,0,0],[0,0,0,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,0,0,0],[0,0,0,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,8,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0]]}]}"
-            }
-          ],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "1ef6f774-a666-42ab-bcc0-4ecdb8656e6a",
-          "width": 0,
-          "x": 896,
-          "y": 288,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "a95eccb9-3ddc-4f20-aeec-55dd40e9cf56",
-          "width": 0,
-          "x": 448,
-          "y": 224,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "726d874b-fb5d-4e42-82f6-c3d2ab5aefbd",
-          "width": 0,
-          "x": 768,
-          "y": 512,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0.5,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Wall",
-          "persistentUuid": "22bf0d32-275e-4e74-b120-bfa34be62474",
-          "width": 64,
-          "x": 320,
-          "y": 384,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "6dabd131-ae06-40b2-930f-50d1e7026310",
-          "width": 0,
-          "x": 608,
-          "y": 512,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "4422fbf3-9071-4d22-97ee-f258cac25ee2",
-          "width": 0,
-          "x": 416,
-          "y": 224,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "feccce61-ac7a-40f8-925e-84ce0766fc15",
-          "width": 0,
-          "x": 512,
-          "y": 224,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "4a78f239-4eba-4792-a457-8b997763e8eb",
-          "width": 0,
-          "x": 640,
-          "y": 416,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "e8b8a032-ae32-41b2-9468-0aad5f3d0e6c",
-          "width": 0,
-          "x": 896,
-          "y": 416,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "0558feb8-600f-40b6-b474-67ea4d4a7bd2",
-          "width": 0,
-          "x": 896,
-          "y": 384,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "cb56c589-3dec-471f-9f78-46c50bc95adc",
-          "width": 0,
-          "x": 704,
-          "y": 512,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plant",
-          "persistentUuid": "b18f0870-688b-448d-a660-b6012462631f",
-          "width": 0,
-          "x": 672,
-          "y": 416,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "MobileControls",
-          "name": "Joystick",
-          "persistentUuid": "b0c31bb4-0add-4dda-9367-c5136e4b118d",
-          "width": 0,
-          "x": 176,
-          "y": 576,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0.5,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Wall",
-          "persistentUuid": "c7ce716c-4fa4-4a66-9ec8-e0fd2a3937c4",
-          "width": 64,
-          "x": 768,
-          "y": 192,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -451,169 +380,44 @@
       ],
       "objects": [
         {
-          "adaptCollisionMaskAutomatically": false,
+          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "TopDown_Character",
+          "name": "robo",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
           "behaviors": [
             {
-              "name": "SmoothCamera",
-              "type": "SmoothCamera::SmoothCamera",
-              "LeftwardSpeed": 0.99,
-              "RightwardSpeed": 0.99,
-              "UpwardSpeed": 0.99,
-              "DownwardSpeed": 0.99,
-              "FollowOnX": true,
-              "FollowOnY": true,
-              "FollowFreeAreaLeft": 0,
-              "FollowFreeAreaRight": 0,
-              "FollowFreeAreaTop": 0,
-              "FollowFreeAreaBottom": 0,
-              "CameraOffsetX": 0,
-              "CameraOffsetY": 0,
-              "CameraDelay": 0,
-              "ForecastTime": 0,
-              "ForecastHistoryDuration": 0,
-              "LogLeftwardSpeed": 2.0247e-320,
-              "LogRightwardSpeed": 2.0247e-320,
-              "LogDownwardSpeed": 2.0247e-320,
-              "LogUpwardSpeed": 2.0247e-320,
-              "DelayedCenterX": 2.0247e-320,
-              "DelayedCenterY": 2.0247e-320,
-              "ForecastHistoryMeanX": 2.0247e-320,
-              "ForecastHistoryMeanY": 2.0247e-320,
-              "ForecastHistoryVarianceX": 2.0247e-320,
-              "ForecastHistoryCovariance": 2.0247e-320,
-              "ForecastHistoryLinearA": 2.0247e-320,
-              "ForecastHistoryLinearB": 2.0247e-320,
-              "ForecastedX": 2.0247e-320,
-              "ForecastedY": 2.0247e-320,
-              "ProjectedNewestX": 2.0247e-320,
-              "ProjectedNewestY": 2.0247e-320,
-              "ProjectedOldestX": 2.0247e-320,
-              "ProjectedOldestY": 2.0247e-320,
-              "ForecastHistoryVarianceY": 2.0247e-320,
-              "Index": 2.0247e-320,
-              "CameraDelayCatchUpSpeed": 0,
-              "CameraExtraDelay": 2.0247e-320,
-              "WaitingSpeedXMax": 2.0247e-320,
-              "WaitingSpeedYMax": 2.0247e-320,
-              "WaitingEnd": 2.0247e-320,
-              "CameraDelayCatchUpDuration": 2.0247e-320,
-              "LeftwardSpeedMax": 9000,
-              "RightwardSpeedMax": 9000,
-              "UpwardSpeedMax": 9000,
-              "DownwardSpeedMax": 9000,
-              "OldX": 9000.000000007454,
-              "OldY": 9000.000000007454,
-              "IsCalledManually": false
-            },
-            {
-              "name": "TopDownMovement",
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-              "acceleration": 450,
-              "angularMaxSpeed": 150,
-              "deceleration": 900,
-              "maxSpeed": 125,
-              "rotateObject": false,
-              "allowDiagonals": true,
+              "acceleration": 400,
+              "allowDiagonals": false,
               "angleOffset": 0,
+              "angularMaxSpeed": 180,
               "customIsometryAngle": 30,
+              "deceleration": 800,
               "ignoreDefaultControls": false,
+              "maxSpeed": 200,
               "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "useLegacyTurnBack": false,
               "viewpoint": "TopDown"
-            },
-            {
-              "name": "TopDownMultitouchMapper",
-              "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
-              "TopDownMovement": "TopDownMovement",
-              "ControllerIdentifier": 1,
-              "JoystickIdentifier": "Primary",
-              "StickMode": "Analog"
             }
           ],
           "animations": [
             {
-              "name": "",
+              "name": "IdleDown",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets\\StartingPixelPlayer.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "Ground_Tilemap",
-          "type": "TileMap::SimpleTileMap",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "atlasImage": "assets\\StartingPixelGroundTilemap.png",
-            "rowCount": 3,
-            "columnCount": 3,
-            "tileSize": 32,
-            "tilesWithHitBox": ""
-          }
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Wall",
-          "texture": "assets\\StartingPixelWall.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Plant",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\StartingPixelObstacle.png",
+                      "image": "Idle_Down2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -629,36 +433,507 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 16
-                          },
-                          {
-                            "x": 4,
+                            "x": 7,
                             "y": 4
                           },
                           {
-                            "x": 16,
-                            "y": 0
-                          },
-                          {
-                            "x": 28,
+                            "x": 25,
                             "y": 4
                           },
                           {
-                            "x": 32,
-                            "y": 16
+                            "x": 25,
+                            "y": 31
                           },
                           {
-                            "x": 28,
-                            "y": 28
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "IdleUP",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Idle_UP",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
                           },
                           {
-                            "x": 16,
-                            "y": 32
+                            "x": 25,
+                            "y": 4
                           },
                           {
-                            "x": 4,
-                            "y": 28
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "IdleLeft",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Idle_Left",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "IdleRight",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Idle_Right2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "WalkDown",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.11,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "robo_down",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "robo_down2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "WalkUp",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.11,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Up",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Up2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "WalkLeft",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.11,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "robo",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "robo2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "WalkRight",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.11,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Right",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Right2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 4
+                          },
+                          {
+                            "x": 25,
+                            "y": 31
+                          },
+                          {
+                            "x": 7,
+                            "y": 31
                           }
                         ]
                       ]
@@ -668,110 +943,16 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "e71bd69f896d6c7531b48c65ceb5da25071d4fbdeb518aeceecba8d21f34ed8d",
-          "name": "Joystick",
-          "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {},
-          "childrenContent": {
-            "Border": {
-              "adaptCollisionMaskAutomatically": false,
-              "updateIfNotVisible": false,
-              "animations": [
-                {
-                  "name": "Idle",
-                  "useMultipleDirections": false,
-                  "directions": [
-                    {
-                      "looping": false,
-                      "timeBetweenFrames": 0.08,
-                      "sprites": [
-                        {
-                          "hasCustomCollisionMask": false,
-                          "image": "Flat dark joystick border.png",
-                          "points": [],
-                          "originPoint": {
-                            "name": "origine",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "centerPoint": {
-                            "automatic": true,
-                            "name": "centre",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "customCollisionMask": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            "Thumb": {
-              "adaptCollisionMaskAutomatically": false,
-              "updateIfNotVisible": false,
-              "animations": [
-                {
-                  "name": "Idle",
-                  "useMultipleDirections": false,
-                  "directions": [
-                    {
-                      "looping": false,
-                      "timeBetweenFrames": 0.08,
-                      "sprites": [
-                        {
-                          "hasCustomCollisionMask": false,
-                          "image": "Flat dark joystick thumb.png",
-                          "points": [],
-                          "originPoint": {
-                            "name": "origine",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "centerPoint": {
-                            "automatic": true,
-                            "name": "centre",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "customCollisionMask": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "TopDown_Character"
-          },
-          {
-            "objectName": "Ground_Tilemap"
-          },
-          {
-            "objectName": "Wall"
-          },
-          {
-            "objectName": "Plant"
-          },
-          {
-            "folderName": "Mobile Controls",
+            "folderName": "Robo",
             "children": [
               {
-                "objectName": "Joystick"
+                "objectName": "robo"
               }
             ]
           }
@@ -806,26 +987,221 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Down\""
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
-                "value": "SeparateFromObjects"
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
               },
               "parameters": [
-                "TopDown_Character",
-                "Wall",
-                ""
+                "robo",
+                "Animation",
+                "=",
+                "\"WalkDown\""
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
-                "value": "SeparateFromObjects"
+                "value": "KeyFromTextPressed"
               },
               "parameters": [
-                "TopDown_Character",
-                "Plant",
-                ""
+                "",
+                "\"Up\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "robo",
+                "Animation",
+                "=",
+                "\"WalkUp\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "robo",
+                "Animation",
+                "=",
+                "\"WalkLeft\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Right\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "robo",
+                "Animation",
+                "=",
+                "\"WalkRight\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "robo",
+                "TopDownMovement"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation",
+                    "=",
+                    "\"WalkDown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation",
+                    "=",
+                    "\"WalkUp\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation",
+                    "=",
+                    "\"WalkLeft\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation",
+                    "=",
+                    "\"WalkRight\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation",
+                    "=",
+                    "\"IdleDown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation",
+                    "=",
+                    "\"IdleUP\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation",
+                    "=",
+                    "\"IdleLeft\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation",
+                    "=",
+                    "\"IdleRight\""
+                  ]
+                }
               ]
             }
           ]
@@ -904,16 +1280,8 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera"
-        },
-        {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
         }
       ]
     }
