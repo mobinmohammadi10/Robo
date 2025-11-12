@@ -4127,7 +4127,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8700232859857325,
+        "zoomFactor": 0.9610368693714875,
         "windowMask": false,
         "selectedLayer": "Land Layer"
       },
@@ -4177,7 +4177,7 @@
           "stringProperties": [
             {
               "name": "tilemap",
-              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":40,\"dimY\":23,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[29,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,-1,1,1,1,1,1,6],[28,10,11,10,9,10,10,11,10,10,10,10,11,10,10,10,10,10,10,11,10,9,10,10,10,10,10,11,10,10,10,9,-1,-1,11,9,10,10,10,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[24,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,27]]}]}"
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":40,\"dimY\":23,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[29,1,1,1,1,54,1,1,1,1,1,54,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,6],[28,10,11,10,9,28,10,11,10,10,10,28,11,10,10,10,10,10,10,11,10,9,10,10,10,10,10,11,10,10,10,9,10,10,11,9,10,10,10,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,29,1,2,2,54,2,2,2,2,2,2,2,2,2,3,6,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,37,9,10,10,28,9,9,10,10,10,10,10,10,10,11,28,-1,-1,20,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,45,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,28,-1,0,1,2,2,2,2,2,3,2,27,-1,-1,28,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,28,-1,8,9,10,10,10,10,10,11,10,35,-1,-1,28,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,26,27,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,20,-1,28],[28,-1,-1,-1,34,35,-1,-1,-1,-1,-1,24,1,2,2,2,6,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,28,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,32,9,10,10,10,28,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,28,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,24,3,1,2,27,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,36,-1,-1,24,1,1,2,2,2,2,3,3,3,6,-1,-1,-1,32,32,9,10,35,-1,28],[28,-1,-1,-1,-1,29,3,3,3,4,-1,-1,-1,-1,-1,-1,44,-1,-1,32,9,10,10,10,10,10,11,11,10,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,28,38,11,11,12,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,24,6,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,37,46,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,45,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,28],[24,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,59,2,2,2,2,48,48,2,2,27]]}]}"
             }
           ],
           "initialVariables": []
@@ -4192,9 +4192,511 @@
           "name": "robo",
           "persistentUuid": "52311add-287a-4aff-b0f9-9f33ea1f2d01",
           "width": 64,
-          "x": 58,
-          "y": 289,
+          "x": 68,
+          "y": 601,
           "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 126,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Up_convey_belt",
+          "persistentUuid": "00e8a7be-c360-4e34-9198-ade8ce5762d1",
+          "width": 128,
+          "x": 219,
+          "y": 83,
+          "zOrder": 15,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 117.02857142857144,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Up_convey_belt",
+          "persistentUuid": "33af67e6-5916-4c9d-b450-0c09975af433",
+          "width": 128,
+          "x": 219,
+          "y": 293,
+          "zOrder": 15,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 117.02857142857144,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Up_convey_belt",
+          "persistentUuid": "6f03e29e-1a8d-4c52-a06b-cd897e65971a",
+          "width": 128,
+          "x": 219,
+          "y": 410,
+          "zOrder": 15,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 117.02857142857144,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Up_convey_belt",
+          "persistentUuid": "89a83a73-97d8-4e65-a27c-99dfdae16376",
+          "width": 128,
+          "x": 219,
+          "y": 176,
+          "zOrder": 15,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 74,
+          "layer": "",
+          "name": "Control_Unit",
+          "persistentUuid": "7cf972bb-989f-4bcd-a937-8038ba300b1e",
+          "width": 66,
+          "x": 184,
+          "y": 397,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Right_Convey_Belt",
+          "persistentUuid": "5820c3a5-a757-41c1-9cd3-e9964c2db2ce",
+          "width": 80,
+          "x": 598,
+          "y": 618,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 80,
+          "layer": "",
+          "name": "Right_Convey_Belt",
+          "persistentUuid": "851a8fc3-f149-4399-ba95-da680c84f986",
+          "width": 244,
+          "x": 593,
+          "y": 618,
+          "zOrder": 20,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 80,
+          "layer": "",
+          "name": "Right_Convey_Belt",
+          "persistentUuid": "3c04216e-47ad-4fb4-9c78-cd8b1347f21c",
+          "width": 244,
+          "x": 666,
+          "y": 618,
+          "zOrder": 20,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0.975609756097561,
+          "height": 80,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Right_Convey_Belt",
+          "persistentUuid": "d3ca237d-5597-422e-a1c8-59e9916d7281",
+          "width": 95.60975609756096,
+          "x": 824,
+          "y": 618,
+          "zOrder": 21,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80.45714285714281,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Down_convey_belt",
+          "persistentUuid": "9109b24e-1c0f-4e29-bc57-f4b2580a01c9",
+          "width": 88,
+          "x": 1092,
+          "y": 383,
+          "zOrder": 25,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80.45714285714281,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Down_convey_belt",
+          "persistentUuid": "9cb639a6-70e2-4874-b090-a86e06a23607",
+          "width": 88,
+          "x": 1092,
+          "y": 303,
+          "zOrder": 25,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80.45714285714281,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Down_convey_belt",
+          "persistentUuid": "4c6664a7-a4dc-40bc-a4e2-9a46a8dc994f",
+          "width": 88,
+          "x": 1091,
+          "y": 181,
+          "zOrder": 25,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80.45714285714281,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Down_convey_belt",
+          "persistentUuid": "3c055ebe-afa2-42ce-ad65-74406855362b",
+          "width": 88,
+          "x": 1091,
+          "y": 101,
+          "zOrder": 25,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 80.45714285714281,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Down_convey_belt",
+          "persistentUuid": "35593da1-a2fc-4499-9e4d-8cb27d06f6b7",
+          "width": 88,
+          "x": 1091,
+          "y": 222,
+          "zOrder": 25,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 76,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Left_convey_belt",
+          "persistentUuid": "a9fe1d38-c014-42ef-a62a-95b98617e3cc",
+          "width": 107,
+          "x": 890,
+          "y": 407,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 76,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Left_convey_belt",
+          "persistentUuid": "53aed06b-c4f3-4499-8418-606e4fb5435b",
+          "width": 355,
+          "x": 659,
+          "y": 407,
+          "zOrder": 27,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 76,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Left_convey_belt",
+          "persistentUuid": "837a8aca-9d73-4239-a438-ebc2dad1d173",
+          "width": 99,
+          "x": 684,
+          "y": 407,
+          "zOrder": 27,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 119,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Door",
+          "persistentUuid": "9fecff65-d571-499e-a99d-8c47ea2d4332",
+          "width": 74,
+          "x": 1111,
+          "y": 625,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Crate",
+          "persistentUuid": "f395d60d-d450-4aae-abc5-f4aec43c7f50",
+          "width": 50,
+          "x": 130,
+          "y": 482,
+          "zOrder": 29,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 54,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Control_Unit",
+          "persistentUuid": "2e3b947c-dadb-4be7-9ffc-cf2ef9817de5",
+          "width": 45,
+          "x": 600,
+          "y": 573,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Crate",
+          "persistentUuid": "67e08001-e14d-4456-ab0a-3a8f73959c4a",
+          "width": 50,
+          "x": 479,
+          "y": 612,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 59,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Control_Unit",
+          "persistentUuid": "b63c3393-62ba-4394-8bc1-83a15e26d3dc",
+          "width": 45,
+          "x": 1092,
+          "y": 81,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 47,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Crate",
+          "persistentUuid": "58b1268e-1811-46a3-aab3-05d3c7a76f77",
+          "width": 47,
+          "x": 969,
+          "y": 76,
+          "zOrder": 33,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 59.326530612244895,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Control_Unit",
+          "persistentUuid": "600f5922-0233-4ffc-a26d-ce1048f4df7f",
+          "width": 51,
+          "x": 933,
+          "y": 355,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 54,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Crate",
+          "persistentUuid": "2f8a3ade-50a3-46d2-a7f9-3a184c18bcf6",
+          "width": 54,
+          "x": 982,
+          "y": 342,
+          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6561,7 +7063,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6765,6 +7266,122 @@
                   "parameters": [
                     "robo",
                     "WallTiles",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Right_Convey_Belt",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Right_Convey_Belt",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Left_convey_belt",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Left_convey_belt",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Up_convey_belt",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Up_convey_belt",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Down_convey_belt",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Down_convey_belt",
                     ""
                   ]
                 }
@@ -7778,6 +8395,86 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "robo",
+                "Door",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Door",
+                "Animation",
+                "=",
+                "\"OpenDoor\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "robo"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Door",
+                "Animation",
+                "=",
+                "\"CloseDoor\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Zone 2\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
