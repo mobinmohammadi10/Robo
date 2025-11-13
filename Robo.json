@@ -2232,6 +2232,21 @@
         "metadata": "",
         "name": "assets\\Arts\\Sprites\\Robo\\Awakening_Robot.mp4",
         "userAdded": false
+      },
+      {
+        "file": "assets/Arts/UI_HUD/HUD_Frame.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Arts\\UI_HUD\\HUD_Frame.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fonts/PixelifySans-VariableFont_wght.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2905,6 +2920,9 @@
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "DialogeBox"
+      },
       {
         "folderName": "Environment Tiles",
         "children": [
@@ -3617,7 +3635,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5653158055126547,
+        "zoomFactor": 1.0269425874981506,
         "windowMask": false,
         "selectedLayer": "WallLayer"
       },
@@ -3707,6 +3725,22 @@
           "x": 1015,
           "y": -2,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "WallLayer",
+          "name": "DialogueBox",
+          "persistentUuid": "8ebd6c8f-c621-4712-b91b-2747727284bb",
+          "width": 0,
+          "x": 459,
+          "y": 202,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4320,6 +4354,18 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "DialogueBox",
+          "type": "DialogueBox::DialogueBox",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "Dialogue_Text": "Hey What happened I am alive!!!"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -4335,6 +4381,9 @@
                 "objectName": "HubText"
               }
             ]
+          },
+          {
+            "objectName": "DialogueBox"
           }
         ]
       },
@@ -4632,9 +4681,90 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Dialogue Handling",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "DialogueBox",
+                    "!=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "robo",
+                    "TopDownMovement",
+                    "no"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DialogueBox::DialogueBox::isOkButtonClicked"
+                      },
+                      "parameters": [
+                        "DialogueBox",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "DialogueBox",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "robo",
+                        "TopDownMovement",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                      },
+                      "parameters": [
+                        "robo",
+                        "Animation"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
@@ -9431,6 +9561,93 @@
           ]
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Dialogue Handling",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "DialogueBox",
+                    "!=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "robo",
+                    "TopDownMovement",
+                    "no"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DialogueBox::DialogueBox::isOkButtonClicked"
+                      },
+                      "parameters": [
+                        "DialogueBox",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "DialogueBox",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "robo",
+                        "TopDownMovement",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                      },
+                      "parameters": [
+                        "robo",
+                        "Animation"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": []
@@ -13603,6 +13820,325 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "Game mechanic",
+      "extensionNamespace": "",
+      "fullName": "DialogueBox",
+      "gdevelopVersion": "",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWFjY291bnQtdGllLXZvaWNlLW91dGxpbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNzUgNC4zNkMxOC43NyA2LjU2IDE4Ljc3IDkuNjEgMTYuNzUgMTEuNjNMMTUuMDcgOS45NEMxNS45MSA4Ljc2IDE1LjkxIDcuMjMgMTUuMDcgNi4wNUwxNi43NSA0LjM2TTIwLjA2IDFDMjQgNS4wNSAyMy45NiAxMS4xMSAyMC4wNiAxNUwxOC40MyAxMy4zN0MyMS4yIDEwLjE5IDIxLjIgNS42NSAxOC40MyAyLjYzTDIwLjA2IDFNMTMuMzYgMTMuNzZDMTUuMzEgMTQuNDIgMTcgMTUuNSAxNyAxN1YyMkgxVjE3QzEgMTUuNSAyLjY5IDE0LjQyIDQuNjUgMTMuNzZMNS4yNyAxNUw1LjUgMTUuNUM0IDE1Ljk2IDIuOSAxNi42MiAyLjkgMTdWMjAuMUg3LjEyTDggMTUuMDNMNy4wNiAxMy4xNUM3LjY4IDEzLjA4IDguMzMgMTMuMDMgOSAxMy4wM1MxMC4zMiAxMy4wOCAxMC45NCAxMy4xNUwxMCAxNS4wM0wxMC44OCAyMC4xSDE1LjFWMTdDMTUuMSAxNi42MiAxNCAxNS45NiAxMi41IDE1LjVMMTIuNzMgMTVMMTMuMzYgMTMuNzZNOSA2QzcuOSA2IDcgNi45IDcgOFM3LjkgMTAgOSAxMCAxMSA5LjEgMTEgOCAxMC4xIDYgOSA2TTkgMTJDNi43OSAxMiA1IDEwLjIxIDUgOFM2Ljc5IDQgOSA0IDEzIDUuNzkgMTMgOCAxMS4yMSAxMiA5IDEyWiIgLz48L3N2Zz4=",
+      "name": "DialogueBox",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/b15acada540dab199760c6ad822689f8700efa26a55849f0ae8dc8af54bd1abd_account-tie-voice-outline.svg",
+      "shortDescription": "An object for showing Dialogue in game",
+      "version": "0.1",
+      "description": "An object for showing Dialogue in game",
+      "tags": [],
+      "authorIds": [],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": [
+        {
+          "areaMaxX": 256,
+          "areaMaxY": 256,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "defaultName": "",
+          "description": "",
+          "fullName": "DialogueBox",
+          "isTextContainer": true,
+          "isUsingLegacyInstancesRenderer": false,
+          "name": "DialogueBox",
+          "objects": [
+            {
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "DialogeBoxText",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "string": "Text",
+              "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Text",
+                "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 20,
+                "lineHeight": 0,
+                "color": "255;255;255"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "name": "DialogeButton",
+              "persistentUuid": "0f641c3c-cd06-4d5c-90d5-9464f1141e22",
+              "type": "PanelSpriteButton::PanelSpriteButton",
+              "variant": "DialogueButton",
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "content": {
+                "LabelText": "OK"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 0,
+              "height": 256,
+              "leftMargin": 0,
+              "name": "DialogePanel",
+              "rightMargin": 0,
+              "texture": "assets\\Arts\\UI_HUD\\HUD_Frame.png",
+              "tiled": false,
+              "topMargin": 0,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 256,
+              "variables": [],
+              "effects": [],
+              "behaviors": []
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "DialogePanel"
+              },
+              {
+                "objectName": "DialogeButton"
+              },
+              {
+                "objectName": "DialogeBoxText"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "DialogePanel",
+              "persistentUuid": "9e852abd-2838-4a6b-b123-a42cb7cf93b9",
+              "width": 0,
+              "x": 0,
+              "y": 0,
+              "zOrder": 4,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 64,
+              "height": 64,
+              "layer": "",
+              "name": "DialogeButton",
+              "persistentUuid": "b96f8ec7-db6a-4ec9-bb8a-714c80821853",
+              "width": 71,
+              "x": 89,
+              "y": 172,
+              "zOrder": 6,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 224,
+              "keepRatio": true,
+              "layer": "",
+              "name": "DialogeBoxText",
+              "persistentUuid": "24bf7e8f-a801-47c4-ab40-00d29281fdea",
+              "width": 224,
+              "x": 16,
+              "y": 16,
+              "zOrder": 5,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": {
+            "grid": false,
+            "gridType": "rectangular",
+            "gridWidth": 32,
+            "gridHeight": 32,
+            "gridOffsetX": 0,
+            "gridOffsetY": 0,
+            "gridColor": 10401023,
+            "gridAlpha": 0.8,
+            "snap": false,
+            "zoomFactor": 1.7767172794084911,
+            "windowMask": false,
+            "selectedLayer": ""
+          },
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Condition",
+              "name": "isOkButtonClicked",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "DialogeButton",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "DialogueBox::DialogueBox",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::Value"
+                      },
+                      "parameters": [
+                        "DialogeBoxText",
+                        "Text",
+                        "!=",
+                        "Dialogue_Text"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "DialogeBoxText",
+                        "Text",
+                        "=",
+                        "Dialogue_Text"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "DialogueBox::DialogueBox",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "Change Me",
+              "type": "String",
+              "label": "To make showed text in dialogue different change the default value",
+              "name": "Dialogue_Text"
+            }
+          ],
+          "variants": []
+        }
+      ]
+    },
     {
       "author": "",
       "category": "Input",
@@ -26331,7 +26867,7 @@
               "areaMinX": 0,
               "areaMinY": 0,
               "areaMinZ": 0,
-              "name": "Start",
+              "name": "DialogueButton",
               "objects": [
                 {
                   "assetStoreId": "",
@@ -26355,8 +26891,8 @@
                       "useLegacyBottomAndRightAnchors": false
                     }
                   ],
-                  "string": "Start",
-                  "font": "assets\\Fonts\\Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf",
+                  "string": "OK",
+                  "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
                   "textAlignment": "center",
                   "characterSize": 20,
                   "color": {
@@ -26378,8 +26914,8 @@
                     "shadowOpacity": 127,
                     "smoothed": true,
                     "underlined": false,
-                    "text": "Start",
-                    "font": "assets\\Fonts\\Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf",
+                    "text": "OK",
+                    "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
                     "textAlignment": "center",
                     "verticalTextAlignment": "center",
                     "characterSize": 20,
@@ -26617,7 +27153,324 @@
                   "layer": "",
                   "name": "Label",
                   "persistentUuid": "3b29c95c-5363-4e25-bf47-eecf13e8a226",
-                  "width": 256,
+                  "width": 255,
+                  "x": 0,
+                  "y": 32,
+                  "zOrder": 2,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {
+                "grid": false,
+                "gridType": "rectangular",
+                "gridWidth": 32,
+                "gridHeight": 32,
+                "gridOffsetX": 0,
+                "gridOffsetY": 0,
+                "gridColor": 10401023,
+                "gridAlpha": 0.8,
+                "snap": false,
+                "zoomFactor": 1.4561294334555566,
+                "windowMask": false,
+                "selectedLayer": ""
+              }
+            },
+            {
+              "areaMaxX": 256,
+              "areaMaxY": 64,
+              "areaMaxZ": 64,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "name": "Start",
+              "objects": [
+                {
+                  "assetStoreId": "",
+                  "bold": false,
+                  "italic": false,
+                  "name": "Label",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 4,
+                      "topEdgeAnchor": 4,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ],
+                  "string": "OK",
+                  "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+                  "textAlignment": "center",
+                  "characterSize": 20,
+                  "color": {
+                    "b": 248,
+                    "g": 248,
+                    "r": 248
+                  },
+                  "content": {
+                    "bold": false,
+                    "isOutlineEnabled": false,
+                    "isShadowEnabled": true,
+                    "italic": false,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 2,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "OK",
+                    "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+                    "textAlignment": "center",
+                    "verticalTextAlignment": "center",
+                    "characterSize": 20,
+                    "lineHeight": 0,
+                    "color": "248;248;248"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 32,
+                  "leftMargin": 0,
+                  "name": "Idle",
+                  "rightMargin": 0,
+                  "texture": "assets\\Arts\\UI_HUD\\UI_Button.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 32,
+                  "variables": [
+                    {
+                      "folded": true,
+                      "name": "State",
+                      "type": "string",
+                      "value": "Idle"
+                    }
+                  ],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "ButtonFSM",
+                      "type": "PanelSpriteButton::ButtonFSM",
+                      "ShouldCheckHovering": true
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 32,
+                  "leftMargin": 0,
+                  "name": "Hovered",
+                  "rightMargin": 0,
+                  "texture": "assets\\Arts\\UI_HUD\\UI_Button_Hover.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 32,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "Tween",
+                      "type": "Tween::TweenBehavior"
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 32,
+                  "leftMargin": 0,
+                  "name": "Pressed",
+                  "rightMargin": 0,
+                  "texture": "assets\\Arts\\UI_HUD\\UI_Button_Pressed.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 32,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "name": "BitmapLabel",
+                  "type": "BitmapText::BitmapTextObject",
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 4,
+                      "topEdgeAnchor": 4,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ],
+                  "content": {
+                    "text": "Text",
+                    "opacity": 255,
+                    "scale": 1,
+                    "fontSize": 20,
+                    "tint": "255;255;255",
+                    "bitmapFontResourceName": "",
+                    "textureAtlasResourceName": "",
+                    "align": "center",
+                    "verticalTextAlignment": "center"
+                  }
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "Label"
+                  },
+                  {
+                    "objectName": "BitmapLabel"
+                  },
+                  {
+                    "objectName": "Idle"
+                  },
+                  {
+                    "objectName": "Hovered"
+                  },
+                  {
+                    "objectName": "Pressed"
+                  }
+                ]
+              },
+              "objectsGroups": [
+                {
+                  "name": "Background",
+                  "objects": [
+                    {
+                      "name": "Idle"
+                    },
+                    {
+                      "name": "Hovered"
+                    },
+                    {
+                      "name": "Pressed"
+                    }
+                  ]
+                },
+                {
+                  "name": "Labels",
+                  "objects": [
+                    {
+                      "name": "Label"
+                    },
+                    {
+                      "name": "BitmapLabel"
+                    }
+                  ]
+                }
+              ],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 64,
+                  "layer": "",
+                  "name": "Idle",
+                  "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
+                  "width": 64,
+                  "x": 0,
+                  "y": 0,
+                  "zOrder": 1,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 64,
+                  "layer": "",
+                  "name": "Label",
+                  "persistentUuid": "3b29c95c-5363-4e25-bf47-eecf13e8a226",
+                  "width": 64,
                   "x": 0,
                   "y": 32,
                   "zOrder": 2,
