@@ -2247,6 +2247,26 @@
         "metadata": "",
         "name": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
         "userAdded": false
+      },
+      {
+        "file": "assets/Sounds/SoundTracks/Intro/wakingup.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\SoundTracks\\Intro\\wakingup.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sounds/Music/Robobozo.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\Music\\Robobozo.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2921,9 +2941,6 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "folderName": "DialogeBox"
-      },
-      {
         "folderName": "Environment Tiles",
         "children": [
           {
@@ -3045,6 +3062,7 @@
         {
           "assetStoreId": "",
           "name": "Start_Button",
+          "persistentUuid": "5c58b32d-603c-4fa3-ba9f-3b02cdb06e3c",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variant": "Start",
           "variables": [],
@@ -3156,32 +3174,42 @@
               "parameters": [
                 "AwakeningVideo"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\Sounds\\SoundTracks\\Intro\\wakingup.wav",
+                "",
+                "60",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Video::Ended"
+              },
+              "parameters": [
+                "AwakeningVideo"
+              ]
             }
           ],
-          "events": [
+          "actions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Video::Ended"
-                  },
-                  "parameters": [
-                    "AwakeningVideo"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Hub\"",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Hub\"",
+                ""
               ]
             }
           ]
@@ -4425,6 +4453,18 @@
               "parameters": [
                 "HubText"
               ]
+            },
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "assets\\Sounds\\Music\\Robobozo.mp3",
+                "",
+                "60",
+                "1"
+              ]
             }
           ]
         },
@@ -4685,6 +4725,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Dialogue Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8090,6 +8131,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8788,6 +8830,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Start Convey",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9136,6 +9179,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Move on Convey",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9565,6 +9609,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "disabled": true,
           "folded": true,
           "name": "Dialogue Handling",
           "source": "",
@@ -27454,7 +27499,7 @@
                   "layer": "",
                   "name": "Idle",
                   "persistentUuid": "24882334-eec8-403e-8bf1-70fc928a46e6",
-                  "width": 64,
+                  "width": 256,
                   "x": 0,
                   "y": 0,
                   "zOrder": 1,
@@ -27470,7 +27515,7 @@
                   "layer": "",
                   "name": "Label",
                   "persistentUuid": "3b29c95c-5363-4e25-bf47-eecf13e8a226",
-                  "width": 64,
+                  "width": 255,
                   "x": 0,
                   "y": 32,
                   "zOrder": 2,
