@@ -2267,6 +2267,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Sounds/Music/Robobozo.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Sounds\\Music\\Robobozo.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3650,7 +3660,7 @@
       "name": "Hub",
       "r": 255,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 255,
       "uiSettings": {
@@ -4460,9 +4470,9 @@
               },
               "parameters": [
                 "",
-                "assets\\Sounds\\Music\\Robobozo.mp3",
-                "",
-                "60",
+                "assets\\Sounds\\Music\\Robobozo.aac",
+                "yes",
+                "40",
                 "1"
               ]
             }
@@ -4990,7 +5000,7 @@
       "name": "Zone 1",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -9916,7 +9926,7 @@
       "name": "Zone 2",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
@@ -12210,7 +12220,7 @@
       "name": "Zone 3",
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
+      "stopSoundsOnStartup": false,
       "title": "",
       "v": 209,
       "uiSettings": {
