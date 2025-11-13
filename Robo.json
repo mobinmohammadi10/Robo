@@ -2279,7 +2279,6 @@
         "userAdded": false
       },
       {
-<<<<<<< HEAD
         "file": "assets/Arts/Sprites/HubTileSet/Door_vertical.png",
         "kind": "image",
         "metadata": "",
@@ -2292,92 +2291,50 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\Arts\\Sprites\\HubTileSet\\Door_vertical",
-=======
-        "file": "assets/Hostile_robot.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hostile_robot",
->>>>>>> 4279c69f4d64e0002d010b6646c3615ad739a6b0
         "smoothed": false,
         "userAdded": false
       },
       {
-<<<<<<< HEAD
         "file": "assets/assets_Arts_Sprites_HubTileSet_Door_vertical2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\Arts\\Sprites\\HubTileSet\\Door_vertical2",
-=======
-        "file": "assets/Hostile_robot2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hostile_robot2",
->>>>>>> 4279c69f4d64e0002d010b6646c3615ad739a6b0
         "smoothed": false,
         "userAdded": false
       },
       {
-<<<<<<< HEAD
         "file": "assets/assets_Arts_Sprites_HubTileSet_Door_vertical3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\Arts\\Sprites\\HubTileSet\\Door_vertical3",
-=======
-        "file": "assets/Hostile_robot3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hostile_robot3",
->>>>>>> 4279c69f4d64e0002d010b6646c3615ad739a6b0
         "smoothed": false,
         "userAdded": false
       },
       {
-<<<<<<< HEAD
         "file": "assets/assets_Arts_Sprites_HubTileSet_Door_vertical4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\Arts\\Sprites\\HubTileSet\\Door_vertical4",
-=======
-        "file": "assets/Hostile_robot4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hostile_robot4",
->>>>>>> 4279c69f4d64e0002d010b6646c3615ad739a6b0
         "smoothed": false,
         "userAdded": false
       },
       {
-<<<<<<< HEAD
         "file": "assets/assets_Arts_Sprites_HubTileSet_Door_vertical5.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\Arts\\Sprites\\HubTileSet\\Door_vertical5",
-=======
-        "file": "assets/Hostile_robot5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hostile_robot5",
->>>>>>> 4279c69f4d64e0002d010b6646c3615ad739a6b0
         "smoothed": false,
         "userAdded": false
       },
       {
-<<<<<<< HEAD
         "file": "assets/assets_Arts_Sprites_HubTileSet_Door_vertical6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\Arts\\Sprites\\HubTileSet\\Door_vertical6",
-=======
-        "file": "assets/Hostile_robot6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hostile_robot6",
->>>>>>> 4279c69f4d64e0002d010b6646c3615ad739a6b0
         "smoothed": false,
         "userAdded": false
       },
       {
-<<<<<<< HEAD
         "file": "assets/assets_Arts_Sprites_HubTileSet_Door_vertical7.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -2422,12 +2379,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "assets\\Arts\\Sprites\\Zone1\\Button3",
-=======
-        "file": "assets/Hostile_robot7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hostile_robot7",
->>>>>>> 4279c69f4d64e0002d010b6646c3615ad739a6b0
         "smoothed": false,
         "userAdded": false
       }
