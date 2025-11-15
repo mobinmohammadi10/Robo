@@ -2765,6 +2765,30 @@
         "name": "assets\\Arts\\Sprites\\HubTileSet\\Revive_zone.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Arts/Sprites/Robo/Roboface.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Arts\\Sprites\\Robo\\Roboface.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite97.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite97",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Arts/Sprites/Ctrl-SYS/Ctrl-SYS_Face.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Arts\\Sprites\\Ctrl-SYS\\Ctrl-SYS_Face.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4160,6 +4184,7 @@
     {
       "assetStoreId": "",
       "name": "PauseMenu",
+      "persistentUuid": "27a377d6-505d-4164-bbee-4321b76550bf",
       "type": "PauseMenu::MyObject",
       "variant": "",
       "variables": [],
@@ -5037,22 +5062,12 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998330284,
+        "zoomFactor": 0.41943397827592543,
         "windowMask": false,
-        "selectedLayer": "PauseMenu"
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
-        {
-          "name": "ControlState",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "IntroComplete",
-          "type": "number",
-          "value": 0
-        },
         {
           "name": "SceneName",
           "type": "string",
@@ -5132,22 +5147,6 @@
           "x": 1014,
           "y": -133,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "DialogueBox",
-          "persistentUuid": "8ebd6c8f-c621-4712-b91b-2747727284bb",
-          "width": 0,
-          "x": 240,
-          "y": 343,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5832,15 +5831,26 @@
         },
         {
           "assetStoreId": "",
-          "name": "DialogueBox",
-          "persistentUuid": "c028be79-944c-49e0-a461-27ddcf9e31e3",
+          "name": "RoboDialogeBox",
           "type": "DialogueBox::DialogueBox",
-          "variant": "",
+          "variant": "Robo",
           "variables": [],
           "effects": [],
           "behaviors": [],
           "content": {
             "Dialogue_Text": "Hey What happened I am alive!!!"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Ctrl_SYSDialogeBox",
+          "type": "DialogueBox::DialogueBox",
+          "variant": "Ctrl_SYS",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "Dialogue_Text": "I feel something is not in my control!"
           }
         }
       ],
@@ -5859,7 +5869,10 @@
             ]
           },
           {
-            "objectName": "DialogueBox"
+            "objectName": "RoboDialogeBox"
+          },
+          {
+            "objectName": "Ctrl_SYSDialogeBox"
           }
         ]
       },
@@ -5903,6 +5916,28 @@
                 "yes",
                 "40",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "robo",
+                "TopDownMovement",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "RoboDialogeBox",
+                "robo.X()",
+                "robo.Y()",
+                ""
               ]
             },
             {
@@ -6114,6 +6149,12 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -6126,6 +6167,16 @@
                 "Animation",
                 "=",
                 "\"OpenDoor\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "robo",
+                "TopDownMovement",
+                "no"
               ]
             },
             {
@@ -6165,11 +6216,13 @@
             },
             {
               "type": {
-                "value": "Scene"
+                "value": "Create"
               },
               "parameters": [
                 "",
-                "\"Zone 1\"",
+                "Ctrl_SYSDialogeBox",
+                "robo.X()",
+                "robo.Y()",
                 ""
               ]
             }
@@ -6180,7 +6233,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Dialogue Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6190,17 +6242,24 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SceneInstancesCount"
+                    "value": "DialogueBox::DialogueBox::isOkButtonClicked"
                   },
                   "parameters": [
-                    "",
-                    "DialogueBox",
-                    "!=",
-                    "0"
+                    "RoboDialogeBox",
+                    ""
                   ]
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "RoboDialogeBox",
+                    ""
+                  ]
+                },
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -6208,53 +6267,61 @@
                   "parameters": [
                     "robo",
                     "TopDownMovement",
-                    "no"
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                  },
+                  "parameters": [
+                    "robo",
+                    "Animation"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DialogueBox::DialogueBox::isOkButtonClicked"
+                  },
+                  "parameters": [
+                    "Ctrl_SYSDialogeBox",
+                    ""
                   ]
                 }
               ],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "DialogueBox::DialogueBox::isOkButtonClicked"
-                      },
-                      "parameters": [
-                        "DialogueBox",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "DialogueBox",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ActivateBehavior"
-                      },
-                      "parameters": [
-                        "robo",
-                        "TopDownMovement",
-                        "yes"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
-                      },
-                      "parameters": [
-                        "robo",
-                        "Animation"
-                      ]
-                    }
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Ctrl_SYSDialogeBox",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "robo",
+                    "TopDownMovement",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Zone 1\"",
+                    ""
                   ]
                 }
               ]
@@ -20898,6 +20965,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Movement",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21249,6 +21317,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Interaction",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22044,6 +22113,16 @@
                     "PauseMenu",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "True",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -22068,6 +22147,16 @@
                   },
                   "parameters": [
                     "PauseMenu",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "True",
                     ""
                   ]
                 }
@@ -22104,6 +22193,16 @@
                   },
                   "parameters": [
                     "PauseMenu",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "True",
                     ""
                   ]
                 }
@@ -22587,7 +22686,7 @@
             {
               "assetStoreId": "",
               "name": "DialogeButton",
-              "persistentUuid": "0f641c3c-cd06-4d5c-90d5-9464f1141e22",
+              "persistentUuid": "76fd95b7-4143-4b8e-9487-d564bbb3c97e",
               "type": "PanelSpriteButton::PanelSpriteButton",
               "variant": "DialogueButton",
               "variables": [],
@@ -22612,6 +22711,67 @@
               "variables": [],
               "effects": [],
               "behaviors": []
+            },
+            {
+              "adaptCollisionMaskAutomatically": true,
+              "assetStoreId": "",
+              "name": "DialogeFace",
+              "type": "Sprite",
+              "updateIfNotVisible": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "animations": [
+                {
+                  "name": "NewSprite",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "metadata": "{\"pskl\":{}}",
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "NewSprite97",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 0
+                              },
+                              {
+                                "x": 32,
+                                "y": 0
+                              },
+                              {
+                                "x": 32,
+                                "y": 32
+                              },
+                              {
+                                "x": 0,
+                                "y": 32
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ],
           "objectsFolderStructure": {
@@ -22625,6 +22785,9 @@
               },
               {
                 "objectName": "DialogeBoxText"
+              },
+              {
+                "objectName": "DialogeFace"
               }
             ]
           },
@@ -22708,6 +22871,23 @@
               "numberProperties": [],
               "stringProperties": [],
               "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 0,
+              "height": 64,
+              "keepRatio": true,
+              "layer": "",
+              "name": "DialogeFace",
+              "persistentUuid": "e9898694-fae4-4786-a445-a24f2a8620e5",
+              "width": 64,
+              "x": 99,
+              "y": -70,
+              "zOrder": 7,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
             }
           ],
           "editionSettings": {
@@ -22720,7 +22900,7 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 1.7767172794084911,
+            "zoomFactor": 1.2336293478703126,
             "windowMask": false,
             "selectedLayer": ""
           },
@@ -22821,7 +23001,556 @@
               "name": "Dialogue_Text"
             }
           ],
-          "variants": []
+          "variants": [
+            {
+              "areaMaxX": 256,
+              "areaMaxY": 256,
+              "areaMaxZ": 64,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "name": "Ctrl_SYS",
+              "objects": [
+                {
+                  "assetStoreId": "",
+                  "bold": false,
+                  "italic": false,
+                  "name": "DialogeBoxText",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [],
+                  "string": "Text",
+                  "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+                  "textAlignment": "center",
+                  "characterSize": 20,
+                  "color": {
+                    "b": 255,
+                    "g": 255,
+                    "r": 255
+                  },
+                  "content": {
+                    "bold": false,
+                    "isOutlineEnabled": false,
+                    "isShadowEnabled": false,
+                    "italic": false,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 2,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "Text",
+                    "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+                    "textAlignment": "center",
+                    "verticalTextAlignment": "top",
+                    "characterSize": 20,
+                    "lineHeight": 0,
+                    "color": "255;255;255"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "name": "DialogeButton",
+                  "persistentUuid": "0f641c3c-cd06-4d5c-90d5-9464f1141e22",
+                  "type": "PanelSpriteButton::PanelSpriteButton",
+                  "variant": "DialogueButton",
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [],
+                  "content": {
+                    "LabelText": "OK"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 256,
+                  "leftMargin": 0,
+                  "name": "DialogePanel",
+                  "rightMargin": 0,
+                  "texture": "assets\\Arts\\UI_HUD\\HUD_Frame.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 256,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": []
+                },
+                {
+                  "adaptCollisionMaskAutomatically": true,
+                  "assetStoreId": "",
+                  "name": "DialogeFace",
+                  "type": "Sprite",
+                  "updateIfNotVisible": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [],
+                  "animations": [
+                    {
+                      "name": "NewSprite",
+                      "useMultipleDirections": false,
+                      "directions": [
+                        {
+                          "looping": false,
+                          "metadata": "{\"pskl\":{}}",
+                          "timeBetweenFrames": 0.08,
+                          "sprites": [
+                            {
+                              "hasCustomCollisionMask": true,
+                              "image": "assets\\Arts\\Sprites\\Ctrl-SYS\\Ctrl-SYS_Face.png",
+                              "points": [],
+                              "originPoint": {
+                                "name": "origine",
+                                "x": 0,
+                                "y": 0
+                              },
+                              "centerPoint": {
+                                "automatic": true,
+                                "name": "centre",
+                                "x": 0,
+                                "y": 0
+                              },
+                              "customCollisionMask": [
+                                [
+                                  {
+                                    "x": 0,
+                                    "y": 0
+                                  },
+                                  {
+                                    "x": 32,
+                                    "y": 0
+                                  },
+                                  {
+                                    "x": 32,
+                                    "y": 32
+                                  },
+                                  {
+                                    "x": 0,
+                                    "y": 32
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "DialogePanel"
+                  },
+                  {
+                    "objectName": "DialogeButton"
+                  },
+                  {
+                    "objectName": "DialogeBoxText"
+                  },
+                  {
+                    "objectName": "DialogeFace"
+                  }
+                ]
+              },
+              "objectsGroups": [],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": false,
+                  "height": 0,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "DialogePanel",
+                  "persistentUuid": "9e852abd-2838-4a6b-b123-a42cb7cf93b9",
+                  "width": 0,
+                  "x": 0,
+                  "y": 0,
+                  "zOrder": 4,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 64,
+                  "height": 64,
+                  "layer": "",
+                  "name": "DialogeButton",
+                  "persistentUuid": "b96f8ec7-db6a-4ec9-bb8a-714c80821853",
+                  "width": 71,
+                  "x": 89,
+                  "y": 172,
+                  "zOrder": 6,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 224,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "DialogeBoxText",
+                  "persistentUuid": "24bf7e8f-a801-47c4-ab40-00d29281fdea",
+                  "width": 224,
+                  "x": 16,
+                  "y": 16,
+                  "zOrder": 5,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 0,
+                  "height": 64,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "DialogeFace",
+                  "persistentUuid": "1435c239-6d0b-4e84-b908-c1bc292cc12e",
+                  "width": 64,
+                  "x": 99,
+                  "y": -63,
+                  "zOrder": 7,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {
+                "grid": false,
+                "gridType": "rectangular",
+                "gridWidth": 32,
+                "gridHeight": 32,
+                "gridOffsetX": 0,
+                "gridOffsetY": 0,
+                "gridColor": 10401023,
+                "gridAlpha": 0.8,
+                "snap": false,
+                "zoomFactor": 0.9461505190311437,
+                "windowMask": false,
+                "selectedLayer": ""
+              }
+            },
+            {
+              "areaMaxX": 256,
+              "areaMaxY": 256,
+              "areaMaxZ": 64,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "name": "Robo",
+              "objects": [
+                {
+                  "assetStoreId": "",
+                  "bold": false,
+                  "italic": false,
+                  "name": "DialogeBoxText",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [],
+                  "string": "Text",
+                  "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+                  "textAlignment": "center",
+                  "characterSize": 20,
+                  "color": {
+                    "b": 255,
+                    "g": 255,
+                    "r": 255
+                  },
+                  "content": {
+                    "bold": false,
+                    "isOutlineEnabled": false,
+                    "isShadowEnabled": false,
+                    "italic": false,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 2,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "Text",
+                    "font": "assets\\Fonts\\PixelifySans-VariableFont_wght.ttf",
+                    "textAlignment": "center",
+                    "verticalTextAlignment": "top",
+                    "characterSize": 20,
+                    "lineHeight": 0,
+                    "color": "255;255;255"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "name": "DialogeButton",
+                  "persistentUuid": "0f641c3c-cd06-4d5c-90d5-9464f1141e22",
+                  "type": "PanelSpriteButton::PanelSpriteButton",
+                  "variant": "DialogueButton",
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [],
+                  "content": {
+                    "LabelText": "OK"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 0,
+                  "height": 256,
+                  "leftMargin": 0,
+                  "name": "DialogePanel",
+                  "rightMargin": 0,
+                  "texture": "assets\\Arts\\UI_HUD\\HUD_Frame.png",
+                  "tiled": false,
+                  "topMargin": 0,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 256,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": []
+                },
+                {
+                  "adaptCollisionMaskAutomatically": true,
+                  "assetStoreId": "",
+                  "name": "DialogeFace",
+                  "type": "Sprite",
+                  "updateIfNotVisible": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [],
+                  "animations": [
+                    {
+                      "name": "NewSprite",
+                      "useMultipleDirections": false,
+                      "directions": [
+                        {
+                          "looping": false,
+                          "metadata": "{\"pskl\":{}}",
+                          "timeBetweenFrames": 0.08,
+                          "sprites": [
+                            {
+                              "hasCustomCollisionMask": true,
+                              "image": "assets\\Arts\\Sprites\\Robo\\Roboface.png",
+                              "points": [],
+                              "originPoint": {
+                                "name": "origine",
+                                "x": 0,
+                                "y": 0
+                              },
+                              "centerPoint": {
+                                "automatic": true,
+                                "name": "centre",
+                                "x": 0,
+                                "y": 0
+                              },
+                              "customCollisionMask": [
+                                [
+                                  {
+                                    "x": 2,
+                                    "y": 2
+                                  },
+                                  {
+                                    "x": 30,
+                                    "y": 2
+                                  },
+                                  {
+                                    "x": 30,
+                                    "y": 32
+                                  },
+                                  {
+                                    "x": 2,
+                                    "y": 32
+                                  }
+                                ]
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "DialogePanel"
+                  },
+                  {
+                    "objectName": "DialogeButton"
+                  },
+                  {
+                    "objectName": "DialogeBoxText"
+                  },
+                  {
+                    "objectName": "DialogeFace"
+                  }
+                ]
+              },
+              "objectsGroups": [],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": false,
+                  "height": 0,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "DialogePanel",
+                  "persistentUuid": "9e852abd-2838-4a6b-b123-a42cb7cf93b9",
+                  "width": 0,
+                  "x": 0,
+                  "y": 0,
+                  "zOrder": 4,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 64,
+                  "height": 64,
+                  "layer": "",
+                  "name": "DialogeButton",
+                  "persistentUuid": "b96f8ec7-db6a-4ec9-bb8a-714c80821853",
+                  "width": 71,
+                  "x": 89,
+                  "y": 172,
+                  "zOrder": 6,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 224,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "DialogeBoxText",
+                  "persistentUuid": "24bf7e8f-a801-47c4-ab40-00d29281fdea",
+                  "width": 224,
+                  "x": 16,
+                  "y": 16,
+                  "zOrder": 5,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 0,
+                  "height": 64,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "DialogeFace",
+                  "persistentUuid": "49d4014c-ec3f-459b-87ca-cb0753be9b42",
+                  "width": 64,
+                  "x": 96,
+                  "y": -64,
+                  "zOrder": 7,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {
+                "grid": false,
+                "gridType": "rectangular",
+                "gridWidth": 32,
+                "gridHeight": 32,
+                "gridOffsetX": 0,
+                "gridOffsetY": 0,
+                "gridColor": 10401023,
+                "gridAlpha": 0.8,
+                "snap": false,
+                "zoomFactor": 1.0451278114167606,
+                "windowMask": false,
+                "selectedLayer": ""
+              }
+            }
+          ]
         }
       ]
     },
