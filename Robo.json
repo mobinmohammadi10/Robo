@@ -4156,11 +4156,29 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "PauseMenu",
+      "type": "PauseMenu::MyObject",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {}
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "Pause Menu",
+        "children": [
+          {
+            "objectName": "PauseMenu"
+          }
+        ]
+      },
       {
         "folderName": "Environment Tiles",
         "children": [
@@ -4184,7 +4202,13 @@
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Pause",
+      "type": "boolean",
+      "value": false
+    }
+  ],
   "layouts": [
     {
       "b": 0,
@@ -4890,222 +4914,12 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 82,
-          "layer": "",
-          "name": "Quite_Button",
-          "persistentUuid": "b08a5ff8-f24a-4351-8f6c-8ea2dd28adb2",
-          "width": 261,
-          "x": 500,
-          "y": 512,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Menu_Button",
-          "persistentUuid": "79b31068-660b-408e-a413-6af9df2daf03",
-          "width": 0,
-          "x": 500,
-          "y": 384,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Resume_Button",
-          "persistentUuid": "fb5ebcd9-f625-4a50-a07f-b7074e8b8d30",
-          "width": 0,
-          "x": 500,
-          "y": 128,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "CreditText",
-          "persistentUuid": "7eaa5bf2-a709-4c40-bf0f-eceea346be74",
-          "width": 0,
-          "x": 529,
-          "y": 270,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "name": "Quite_Button",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Start",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LabelText": "Quite"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "Menu_Button",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Start",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LabelText": "Main Menu"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "Resume_Button",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variant": "Start",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LabelText": "Resume"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "CreditText",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Pause",
-          "font": "assets\\Fonts\\Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Pause",
-            "font": "assets\\Fonts\\Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 40,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        }
-      ],
+      "instances": [],
+      "objects": [],
       "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "Quite_Button"
-          },
-          {
-            "objectName": "Menu_Button"
-          },
-          {
-            "objectName": "Resume_Button"
-          },
-          {
-            "objectName": "CreditText"
-          }
-        ]
+        "folderName": "__ROOT"
       },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PrioritizeLoadingOfScene"
-              },
-              "parameters": [
-                "",
-                "\"MainMenu\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "Quite_Button",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"MainMenu\"",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
+      "events": [],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -5200,23 +5014,19 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Text",
-          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
     {
-      "b": 255,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "Hub",
       "name": "Hub",
-      "r": 255,
+      "r": 0,
       "standardSortMethod": true,
       "stopSoundsOnStartup": false,
       "title": "",
-      "v": 255,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -5229,7 +5039,7 @@
         "snap": false,
         "zoomFactor": 0.6672773998330284,
         "windowMask": false,
-        "selectedLayer": "WallLayer"
+        "selectedLayer": "PauseMenu"
       },
       "objectsGroups": [],
       "variables": [
@@ -5242,6 +5052,11 @@
           "name": "IntroComplete",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "SceneName",
+          "type": "string",
+          "value": "Hub"
         }
       ],
       "instances": [
@@ -5250,7 +5065,7 @@
           "customSize": true,
           "depth": 2,
           "height": 864,
-          "layer": "WallLayer",
+          "layer": "",
           "name": "WallTiles",
           "persistentUuid": "0f651913-9174-48da-a6e3-220241ce54a4",
           "width": 1280,
@@ -5272,7 +5087,7 @@
           "depth": 0,
           "height": 64,
           "keepRatio": true,
-          "layer": "WallLayer",
+          "layer": "",
           "name": "robo",
           "persistentUuid": "8a67f8c9-c41b-4a7e-8a4f-42014806f648",
           "width": 64,
@@ -5288,7 +5103,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "WallLayer",
+          "layer": "",
           "name": "BaseTiles",
           "persistentUuid": "3977cba8-b453-461a-b21b-a74f6906a98f",
           "width": 0,
@@ -5310,7 +5125,7 @@
           "depth": 1,
           "height": 74,
           "keepRatio": true,
-          "layer": "WallLayer",
+          "layer": "",
           "name": "Door",
           "persistentUuid": "b36c9d60-73d7-4038-86f5-f975a86a9223",
           "width": 74,
@@ -5326,13 +5141,29 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "WallLayer",
+          "layer": "",
           "name": "DialogueBox",
           "persistentUuid": "8ebd6c8f-c621-4712-b91b-2747727284bb",
           "width": 0,
           "x": 240,
           "y": 343,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "PauseMenu",
+          "name": "PauseMenu",
+          "persistentUuid": "d2bd8212-f7cd-476b-9b5e-b2c74bf2bf07",
+          "width": 0,
+          "x": 500,
+          "y": 128,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6002,6 +5833,7 @@
         {
           "assetStoreId": "",
           "name": "DialogueBox",
+          "persistentUuid": "c028be79-944c-49e0-a461-27ddcf9e31e3",
           "type": "DialogueBox::DialogueBox",
           "variant": "",
           "variables": [],
@@ -6033,6 +5865,13 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PauseSystem"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6056,6 +5895,18 @@
             },
             {
               "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "assets\\Sounds\\Music\\Robobozo.aac",
+                "yes",
+                "40",
+                "1"
+              ]
+            },
+            {
+              "type": {
                 "value": "Wait"
               },
               "parameters": [
@@ -6068,18 +5919,6 @@
               },
               "parameters": [
                 "HubText"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlayMusic"
-              },
-              "parameters": [
-                "",
-                "assets\\Sounds\\Music\\Robobozo.aac",
-                "yes",
-                "40",
-                "1"
               ]
             }
           ]
@@ -6422,115 +6261,253 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": true,
+          "folded": true,
+          "name": "Pause Menu handling",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Escape\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeLayerTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PauseMenu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "robo",
+                    "SmoothCamera",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeLayerTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PauseMenu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "robo",
+                    "SmoothCamera",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PauseMenu::MyObject::Resume"
+                  },
+                  "parameters": [
+                    "PauseMenu",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PauseMenu::MyObject::Restart"
+                  },
+                  "parameters": [
+                    "PauseMenu",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Hub\"",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PauseMenu::MyObject::MainMenu"
+                  },
+                  "parameters": [
+                    "PauseMenu",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MainMenu\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "LandLayer",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Ambient Hemisphere Light",
-              "doubleParameters": {
-                "elevation": 40,
-                "intensity": 0.33,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "groundColor": "127;127;127",
-                "skyColor": "255;255;255",
-                "top": "Z+"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        },
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "WallLayer",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Ambient Hemisphere Light",
-              "doubleParameters": {
-                "elevation": 40,
-                "intensity": 0.33,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "groundColor": "127;127;127",
-                "skyColor": "255;255;255",
-                "top": "Z+"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        },
         {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
@@ -6558,6 +6535,59 @@
             }
           ],
           "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "PauseMenu",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -6604,15 +6634,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "Zone_321",
       "name": "Zone 1",
-      "r": 209,
+      "r": 0,
       "standardSortMethod": true,
       "stopSoundsOnStartup": false,
       "title": "",
-      "v": 209,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -6623,9 +6653,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8416428125373503,
+        "zoomFactor": 0.7130377630690736,
         "windowMask": false,
-        "selectedLayer": "Land Layer"
+        "selectedLayer": ""
       },
       "objectsGroups": [
         {
@@ -6699,7 +6729,13 @@
           ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "SceneName",
+          "type": "string",
+          "value": "Zone 1"
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -7562,6 +7598,22 @@
           "x": 1153,
           "y": 211,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "PauseMenu",
+          "name": "PauseMenu",
+          "persistentUuid": "2ac0a09a-be41-414e-9622-8e40f8108b6c",
+          "width": 0,
+          "x": 500,
+          "y": 128,
+          "zOrder": 82,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11410,6 +11462,13 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PauseSystem"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -13602,112 +13661,6 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "LandLayer",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Ambient Hemisphere Light",
-              "doubleParameters": {
-                "elevation": 40,
-                "intensity": 0.33,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "groundColor": "127;127;127",
-                "skyColor": "255;255;255",
-                "top": "Z+"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        },
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "WallLayer",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Ambient Hemisphere Light",
-              "doubleParameters": {
-                "elevation": 40,
-                "intensity": 0.33,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "groundColor": "127;127;127",
-                "skyColor": "255;255;255",
-                "top": "Z+"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        },
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
           "name": "",
           "renderingType": "",
           "visibility": true,
@@ -13723,6 +13676,59 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "PauseMenu",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -13815,15 +13821,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "Zone_322",
       "name": "Zone 2",
-      "r": 209,
+      "r": 0,
       "standardSortMethod": true,
       "stopSoundsOnStartup": false,
       "title": "",
-      "v": 209,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -13834,9 +13840,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.8655255482570197,
+        "zoomFactor": 0.584378441074095,
         "windowMask": false,
-        "selectedLayer": "Wall Layer"
+        "selectedLayer": "PauseMenu"
       },
       "objectsGroups": [
         {
@@ -13909,14 +13915,20 @@
           ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "SceneName",
+          "type": "string",
+          "value": "Zone 2"
+        }
+      ],
       "instances": [
         {
           "angle": 0,
           "customSize": true,
           "depth": 2,
           "height": 736,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "WallTiles",
           "persistentUuid": "36afdf74-b7f7-4390-9328-7ac0b5dbe2fa",
           "width": 1280,
@@ -13937,7 +13949,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "BaseTiles",
           "persistentUuid": "6dfbed33-3f18-4541-bd36-614dc887c354",
           "width": 0,
@@ -13975,7 +13987,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "robatic_arm_left",
           "persistentUuid": "df148343-3fd1-4d7e-8612-68137a0c7598",
           "width": 0,
@@ -13992,7 +14004,7 @@
           "depth": 0,
           "height": 64,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "right_laser_cutter",
           "persistentUuid": "e42966fd-d068-4466-95ab-1df296cdf6d0",
           "width": 64,
@@ -14014,7 +14026,7 @@
           "depth": 1,
           "height": 64,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "laser_horizental",
           "persistentUuid": "00eddfa7-b0db-494c-b4df-331b6c17cbaf",
           "width": 279,
@@ -14031,7 +14043,7 @@
           "depth": 0,
           "height": 49,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "Contro_Unit_1",
           "persistentUuid": "9dec0182-c8b5-4090-89b3-91414bc7cb16",
           "width": 49,
@@ -14053,7 +14065,7 @@
           "depth": 0,
           "height": 95.00000000000001,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "Revive_zone",
           "persistentUuid": "08008ffb-ee0a-4327-8cfa-7a7323c42bd8",
           "width": 95,
@@ -14070,7 +14082,7 @@
           "depth": 1,
           "height": 97,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "Door_vertical",
           "persistentUuid": "91d56538-19db-47d5-99a7-d7d94c379fb6",
           "width": 63,
@@ -14092,7 +14104,7 @@
           "depth": 0,
           "height": 86.85714285714285,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "down_convey_begin",
           "persistentUuid": "596379e3-bc26-4e14-a6c9-617867de1879",
           "width": 95,
@@ -14109,7 +14121,7 @@
           "depth": 0,
           "height": 86.85714285714286,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "down_convey_middle",
           "persistentUuid": "9b513edb-7d6f-4946-8d78-611aa5a5cac8",
           "width": 95,
@@ -14126,7 +14138,7 @@
           "depth": 0,
           "height": 86.85714285714285,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "down_convey_middle",
           "persistentUuid": "e72c48ad-0389-425d-b5c3-0151391f8b8b",
           "width": 95,
@@ -14143,7 +14155,7 @@
           "depth": 0,
           "height": 86.85714285714285,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "down_convey_end",
           "persistentUuid": "2e0a6408-23ee-4f83-8d3a-8f6314466281",
           "width": 95,
@@ -14160,13 +14172,29 @@
           "depth": 0,
           "height": 43,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "Contro_Unit_2",
           "persistentUuid": "2d9537eb-cd3a-4c28-b9dd-b6d542e36304",
           "width": 43,
           "x": 162,
           "y": 233,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "PauseMenu",
+          "name": "PauseMenu",
+          "persistentUuid": "4aaef98a-2290-4d8b-b098-66d7401e8e88",
+          "width": 0,
+          "x": 500,
+          "y": 128,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -18005,6 +18033,13 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PauseSystem"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -18935,10 +18970,21 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "Wall Layer",
+          "name": "",
           "renderingType": "",
           "visibility": true,
-          "cameras": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -18988,21 +19034,10 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "",
+          "name": "PauseMenu",
           "renderingType": "",
           "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -19128,6 +19163,11 @@
           "name": "Reviving",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "SceneName",
+          "type": "string",
+          "value": "Zone 3"
         }
       ],
       "instances": [
@@ -19270,6 +19310,22 @@
           "x": -16,
           "y": 634,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "PauseMenu",
+          "name": "PauseMenu",
+          "persistentUuid": "c2429950-494a-4f8c-8da0-5927c9e0751e",
+          "width": 0,
+          "x": 500,
+          "y": 128,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20744,6 +20800,13 @@
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PauseSystem"
+        },
+        {
           "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -21635,10 +21698,21 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "Wall Layer",
+          "name": "",
           "renderingType": "",
           "visibility": true,
-          "cameras": [],
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -21688,21 +21762,10 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "",
+          "name": "PauseMenu",
           "renderingType": "",
           "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -21790,8 +21853,659 @@
       ]
     }
   ],
-  "externalEvents": [],
+  "externalEvents": [
+    {
+      "associatedLayout": "Hub",
+      "name": "PauseSystem",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"PauseMenu\""
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Pause Menu handling",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Escape\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeLayerTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PauseMenu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "robo",
+                    "SmoothCamera",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeLayerTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PauseMenu\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "robo",
+                    "SmoothCamera",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PauseMenu::MyObject::Resume"
+                  },
+                  "parameters": [
+                    "PauseMenu",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PauseMenu::MyObject::Restart"
+                  },
+                  "parameters": [
+                    "PauseMenu",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pause",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "SceneName",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PauseMenu::MyObject::MainMenu"
+                  },
+                  "parameters": [
+                    "PauseMenu",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"MainMenu\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ]
+    }
+  ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "Game mechanic",
+      "extensionNamespace": "",
+      "fullName": "PauseMenu",
+      "gdevelopVersion": "",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQoJLnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCjwvc3R5bGU+DQo8cmVjdCB4PSI5IiB5PSI5IiBjbGFzcz0ic3QxIiB3aWR0aD0iNSIgaGVpZ2h0PSIxNCIvPg0KPHJlY3QgeD0iMTgiIHk9IjkiIGNsYXNzPSJzdDEiIHdpZHRoPSI1IiBoZWlnaHQ9IjE0Ii8+DQo8L3N2Zz4NCg==",
+      "name": "PauseMenu",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Line Hero Pack/Master/SVG/Music/ba628cc208d26c05549851b1d4a587651490b63259f2ef8e1d5a9ee20b5eda1f_Music_media_player_ui_button_pause.svg",
+      "shortDescription": "",
+      "version": "0.1",
+      "description": "",
+      "tags": [],
+      "authorIds": [],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": [
+        {
+          "areaMaxX": 256,
+          "areaMaxY": 448,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "defaultName": "MyPauseMenu",
+          "description": "",
+          "fullName": "PauseMenu",
+          "isUsingLegacyInstancesRenderer": false,
+          "name": "MyObject",
+          "objects": [
+            {
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "PauseText",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "string": "Pause",
+              "font": "assets\\Fonts\\Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Pause",
+                "font": "assets\\Fonts\\Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf",
+                "textAlignment": "center",
+                "verticalTextAlignment": "top",
+                "characterSize": 40,
+                "lineHeight": 0,
+                "color": "255;255;255"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "name": "Restart_Button",
+              "type": "PanelSpriteButton::PanelSpriteButton",
+              "variant": "Start",
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "content": {
+                "LabelText": "Restart Level"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "name": "Menu_Button",
+              "type": "PanelSpriteButton::PanelSpriteButton",
+              "variant": "Start",
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "content": {
+                "LabelText": "Main Menu"
+              }
+            },
+            {
+              "assetStoreId": "",
+              "name": "Resume_Button",
+              "type": "PanelSpriteButton::PanelSpriteButton",
+              "variant": "Start",
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "content": {
+                "LabelText": "Resume"
+              }
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Resume_Button"
+              },
+              {
+                "objectName": "Menu_Button"
+              },
+              {
+                "objectName": "Restart_Button"
+              },
+              {
+                "objectName": "PauseText"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Resume_Button",
+              "persistentUuid": "34dacae9-dd31-46d2-b68d-f1e432bbf422",
+              "width": 0,
+              "x": 0,
+              "y": 0,
+              "zOrder": 5,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Menu_Button",
+              "persistentUuid": "218b9745-0218-448b-9d04-efa8cb90d94f",
+              "width": 0,
+              "x": 0,
+              "y": 384,
+              "zOrder": 6,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Restart_Button",
+              "persistentUuid": "cd132bea-60ef-4356-9ffc-fcacf45500f3",
+              "width": 0,
+              "x": 0,
+              "y": 247,
+              "zOrder": 7,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "PauseText",
+              "persistentUuid": "e180f443-1a88-4ba1-9e6e-6e2c043ac71f",
+              "width": 0,
+              "x": 30,
+              "y": 131,
+              "zOrder": 8,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": {
+            "grid": false,
+            "gridType": "rectangular",
+            "gridWidth": 32,
+            "gridHeight": 32,
+            "gridOffsetX": 0,
+            "gridOffsetY": 0,
+            "gridColor": 10401023,
+            "gridAlpha": 0.8,
+            "snap": false,
+            "zoomFactor": 1.5625,
+            "windowMask": false,
+            "selectedLayer": ""
+          },
+          "eventsFunctions": [
+            {
+              "description": "Resume",
+              "fullName": "Resume",
+              "functionType": "Condition",
+              "group": "PauseMenu",
+              "name": "Resume",
+              "sentence": "Resume _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "Resume_Button",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PauseMenu::MyObject",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "MainMenu",
+              "fullName": "MainMenu",
+              "functionType": "Condition",
+              "group": "PauseMenu",
+              "name": "MainMenu",
+              "sentence": "MainMenu _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "Menu_Button",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PauseMenu::MyObject",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Restart",
+              "fullName": "Restart",
+              "functionType": "Condition",
+              "group": "PauseMenu",
+              "name": "Restart",
+              "sentence": "Restart _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "Restart_Button",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PauseMenu::MyObject",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [],
+          "variants": []
+        }
+      ]
+    },
     {
       "author": "",
       "category": "Game mechanic",
