@@ -13462,10 +13462,6 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera"
-        },
-        {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
         },
@@ -13476,15 +13472,15 @@
       ]
     },
     {
-      "b": 209,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "Zone_322",
       "name": "Zone 2",
-      "r": 209,
+      "r": 0,
       "standardSortMethod": true,
       "stopSoundsOnStartup": false,
       "title": "",
-      "v": 209,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -13495,9 +13491,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.8655255482570197,
+        "zoomFactor": 0.5653158055126366,
         "windowMask": false,
-        "selectedLayer": "Wall Layer"
+        "selectedLayer": ""
       },
       "objectsGroups": [
         {
@@ -13577,18 +13573,18 @@
           "customSize": true,
           "depth": 2,
           "height": 736,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "WallTiles",
           "persistentUuid": "36afdf74-b7f7-4390-9328-7ac0b5dbe2fa",
-          "width": 1280,
+          "width": 1312,
           "x": 0,
-          "y": 0,
+          "y": 133,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [
             {
               "name": "tilemap",
-              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":40,\"dimY\":23,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[29,1,1,1,54,1,1,1,1,3,54,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-1,-1,1,1,1,1,1,6],[28,10,11,10,28,10,10,11,10,10,28,10,11,10,10,10,10,10,10,11,10,9,10,10,10,10,10,11,10,10,10,9,-1,-1,11,9,10,10,10,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[28,-1,-1,-1,28,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[24,2,2,2,59,2,2,2,2,3,59,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,27]]}]}"
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":41,\"dimY\":23,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[29,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,3,3,2,6,-1,-1,-1,-1,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1],[40,3,3,3,3,3,3,54,2,2,6,-1,-1,-1,29,3,4,-1,-1,5,6,-1,-1,29,6,-1,-1,-1,-1,-1,29,2,2,27,-1,-1,-1,-1,-1,-1,-1],[28,8,9,10,9,10,11,28,-1,-1,28,-1,-1,-1,28,9,12,-1,-1,13,28,-1,-1,28,28,-1,-1,20,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,28,-1,-1,24,3,2,2,27,-1,-1,-1,-1,-1,28,-1,-1,28,24,2,2,27,-1,-1,24,1,2,2,2,2,2,6,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,28,-1,-1,32,33,11,11,35,-1,-1,-1,-1,-1,28,-1,-1,28,32,9,10,35,-1,-1,32,9,10,10,10,10,10,28,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,36,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,44,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,29,2,1,1,2,3,3,2,2,2,27,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,28,10,9,9,10,11,11,10,10,10,35,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,20,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,28,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,29,1,2,2,2,2,2,2,3,41,-1,-1,28,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,28,9,10,10,10,10,10,10,11,24,2,2,41,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,40,2,1,2,27,-1,-1,-1,-1,-1,-1,-1,-1,32,10,10,28,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],[28,-1,-1,-1,-1,-1,-1,28,10,9,10,35,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,24,2,2,2,2,4,-1,-1,-1,0,2,2,2,6],[28,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,32,10,10,10,10,12,-1,-1,-1,8,10,10,10,28],[24,2,2,2,3,2,2,27,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,28],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,24,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,27]]}]}"
             }
           ],
           "initialVariables": []
@@ -13598,18 +13594,18 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "BaseTiles",
           "persistentUuid": "6dfbed33-3f18-4541-bd36-614dc887c354",
           "width": 0,
-          "x": 32,
-          "y": 0,
+          "x": 13,
+          "y": 165,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [
             {
               "name": "tilemap",
-              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":38,\"dimY\":22,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,3,3,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,3,3,-1,-1,-1,-1,-1],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0],[0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,5,5,5,3,3,3,3,0,0,0,0,0,0,0],[0,0,3,3,3,3,5,5,5,5,5,3,3,3,3,3,3,3,3,3,3,5,5,5,5,5,5,3,3,3,3,0,0,3,0,0,0,0],[0,0,3,3,3,3,3,3,3,3,3,3,3,3,5,5,5,5,5,3,3,5,5,5,5,5,5,3,3,3,3,0,0,0,2,2,0,0],[0,3,3,3,3,3,3,3,3,3,3,3,3,3,5,5,5,5,5,3,3,5,5,5,5,5,5,5,5,5,5,0,0,0,2,2,0,0],[3,3,3,3,3,5,3,3,3,3,3,5,5,5,5,5,5,5,5,3,3,5,5,5,5,5,5,5,5,5,5,0,0,0,2,2,0,0],[0,3,3,3,2,5,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,0,0],[0,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0],[0,0,0,0,0,0,3,3,3,3,0,3,3,3,0,0,0,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0],[0,0,2,2,2,0,3,3,3,3,0,3,3,3,0,0,0,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0],[0,3,3,5,2,0,3,3,3,3,0,0,0,0,0,0,0,3,3,3,3,3,0,0,3,3,3,3,3,3,3,3,0,0,0,0,0,0],[0,0,2,2,2,0,3,3,3,3,0,0,0,0,0,1,1,1,1,1,1,3,0,0,3,3,3,3,3,3,3,3,0,0,0,0,0,0],[0,0,2,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,0,0,0,0,0,0],[0,0,3,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,3,0,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,5,5,5,5,3,3,3,2,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,5,5,3,3,3,3,3,2,2,3,3,3,2,0,0,0,0,0,0,0],[0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]}]}"
+              "value": "{\"tileWidth\":32,\"tileHeight\":32,\"dimX\":40,\"dimY\":21,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[4,4,4,4,4,4,4,4,3,3,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,-1,-1,-1,-1,-1,-1,-1],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,-1,-1,-1,-1,-1,-1],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,-1,-1,-1,-1,-1,-1,-1],[0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1],[0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,5,5,5,3,3,3,3,0,0,0,0,0,0,-1,-1,-1],[0,0,3,3,3,3,5,5,5,5,5,3,3,3,3,3,3,3,3,3,3,5,5,5,5,5,5,3,3,3,3,0,0,3,0,0,0,-1,-1,-1],[0,0,3,3,3,3,3,3,3,3,3,3,3,3,5,5,5,5,5,3,3,5,5,5,5,5,5,3,3,3,3,0,0,0,2,2,0,-1,-1,-1],[0,3,3,3,3,3,3,3,3,3,3,3,3,3,5,5,5,5,5,3,3,5,5,5,5,5,5,5,5,5,5,0,0,0,2,2,0,-1,-1,-1],[3,3,3,3,3,5,3,3,3,3,3,5,5,5,5,5,5,5,5,3,3,5,5,5,5,5,5,5,5,5,5,0,0,0,2,2,0,-1,-1,-1],[0,3,3,3,2,5,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,0,-1,-1,-1],[0,3,3,3,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,-1,-1,-1],[0,0,0,0,0,0,3,3,3,3,0,3,3,3,0,0,0,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,-1,-1,-1],[0,0,2,2,2,0,3,3,3,3,0,3,3,3,0,0,0,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,-1,-1,-1],[0,3,3,5,2,0,3,3,3,3,0,0,-1,-1,-1,-1,-1,-1,-1,-1,3,3,0,0,3,3,3,3,3,3,3,3,0,0,0,0,0,-1,-1,-1],[0,0,2,2,2,0,3,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,3,0,0,3,3,3,3,3,3,3,3,0,0,0,0,0,-1,-1,-1],[0,0,2,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,3,3,3,3,3,3,3,3,0,0,0,0,0,0,1,1],[0,0,3,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,5,5,5,5,3,3,3,2,0,0,0,0,0,0,0,1,1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,4,3,2,2,3,3,3,2,0,0,0,0,0,0,0,1,1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,4,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1]]}]}"
             }
           ],
           "initialVariables": []
@@ -13624,9 +13620,43 @@
           "name": "robo",
           "persistentUuid": "6f4d7032-5054-4b92-954e-3b394f067538",
           "width": 64,
-          "x": 31,
-          "y": 500,
+          "x": 28,
+          "y": 646,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 102,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Door_vertical",
+          "persistentUuid": "c82e6ca2-c4ce-44b0-b917-52953f4477a0",
+          "width": 54,
+          "x": 212,
+          "y": 416,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 68,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Door_vertical",
+          "persistentUuid": "fd43c4de-eecb-46e1-8531-0d1ef3563b50",
+          "width": 72,
+          "x": 540,
+          "y": 221,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13636,36 +13666,30 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Wall Layer",
+          "layer": "",
           "name": "robatic_arm_left",
-          "persistentUuid": "df148343-3fd1-4d7e-8612-68137a0c7598",
+          "persistentUuid": "6bf72167-050e-4979-9e04-a1866a692aea",
           "width": 0,
-          "x": 183,
-          "y": 352,
-          "zOrder": 4,
+          "x": 610,
+          "y": 163,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "right_laser_cutter",
-          "persistentUuid": "e42966fd-d068-4466-95ab-1df296cdf6d0",
-          "width": 64,
-          "x": 33,
-          "y": 293,
-          "zOrder": 4,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
+          "layer": "",
+          "name": "Crate",
+          "persistentUuid": "3340fc56-86da-44d5-aa7d-3ecfbb80abc3",
+          "width": 0,
+          "x": 409,
+          "y": 252,
+          "zOrder": 7,
+          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -13673,53 +13697,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "laser_horizental",
-          "persistentUuid": "00eddfa7-b0db-494c-b4df-331b6c17cbaf",
-          "width": 279,
-          "x": 97,
-          "y": 293,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 270,
-          "customSize": true,
-          "depth": 0,
           "height": 49,
           "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "Contro_Unit_1",
-          "persistentUuid": "9dec0182-c8b5-4090-89b3-91414bc7cb16",
-          "width": 49,
-          "x": 79,
-          "y": 431,
-          "zOrder": 6,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 95.00000000000001,
-          "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "Revive_zone",
-          "persistentUuid": "08008ffb-ee0a-4327-8cfa-7a7323c42bd8",
-          "width": 95,
-          "x": 32,
-          "y": 612,
+          "layer": "",
+          "name": "Button",
+          "persistentUuid": "a5fd1b4e-3bf9-441d-976e-bab9d6493e17",
+          "width": 45,
+          "x": 483,
+          "y": 179,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -13727,90 +13712,82 @@
         },
         {
           "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Contro_Unit_1",
+          "persistentUuid": "89ffd333-baec-4ec9-8dca-22464175ec06",
+          "width": 0,
+          "x": 255,
+          "y": 581,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 36,
+          "keepRatio": true,
+          "layer": "",
+          "name": "up_laser_cutter",
+          "persistentUuid": "75c89462-a0a5-4395-869a-9e07b4101114",
+          "width": 36,
+          "x": 610,
+          "y": 512,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "robatic_arm_right",
+          "persistentUuid": "ecb9cd21-b716-4b1f-88b8-05f18c857cb0",
+          "width": 0,
+          "x": 883,
+          "y": 348,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 97,
+          "height": 41,
           "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "Door_vertical",
-          "persistentUuid": "91d56538-19db-47d5-99a7-d7d94c379fb6",
-          "width": 63,
-          "x": 304,
-          "y": 319,
-          "zOrder": 4,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 86.85714285714285,
-          "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "down_convey_begin",
-          "persistentUuid": "596379e3-bc26-4e14-a6c9-617867de1879",
-          "width": 95,
-          "x": 236,
-          "y": 366,
-          "zOrder": 3,
+          "layer": "",
+          "name": "Button",
+          "persistentUuid": "713b6124-6708-4296-9b7a-8a470e69a46b",
+          "width": 41,
+          "x": 1007,
+          "y": 183,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 86.85714285714286,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "down_convey_middle",
-          "persistentUuid": "9b513edb-7d6f-4946-8d78-611aa5a5cac8",
-          "width": 95,
-          "x": 236,
-          "y": 453,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 86.85714285714285,
-          "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "down_convey_middle",
-          "persistentUuid": "e72c48ad-0389-425d-b5c3-0151391f8b8b",
-          "width": 95,
-          "x": 236,
-          "y": 539,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 86.85714285714285,
-          "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "down_convey_end",
-          "persistentUuid": "2e0a6408-23ee-4f83-8d3a-8f6314466281",
-          "width": 95,
-          "x": 236,
-          "y": 625,
-          "zOrder": 3,
+          "layer": "",
+          "name": "Crate",
+          "persistentUuid": "581db713-6b50-43b3-bc15-af6b6ef3430c",
+          "width": 0,
+          "x": 927,
+          "y": 283,
+          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13818,16 +13795,253 @@
         {
           "angle": 90,
           "customSize": true,
-          "depth": 0,
-          "height": 43,
+          "depth": 1,
+          "height": 65,
           "keepRatio": true,
-          "layer": "Wall Layer",
-          "name": "Contro_Unit_2",
-          "persistentUuid": "2d9537eb-cd3a-4c28-b9dd-b6d542e36304",
-          "width": 43,
-          "x": 162,
-          "y": 233,
-          "zOrder": 9,
+          "layer": "",
+          "name": "Door_vertical",
+          "persistentUuid": "444df910-8c86-4c3d-9b1a-b56cbef4fa59",
+          "width": 61,
+          "x": 897,
+          "y": 240,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "down_laser_cutter",
+          "persistentUuid": "96a57a07-f522-43c1-bced-ca8185bdfab8",
+          "width": 0,
+          "x": 939,
+          "y": 165,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 56,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Contro_Unit_1",
+          "persistentUuid": "55bc7a3c-6113-4f72-8c87-870e94e3f646",
+          "width": 59,
+          "x": 893,
+          "y": 590,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1.0289855072463767,
+          "height": 100.84057971014492,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Door",
+          "persistentUuid": "9da12f04-3e89-456e-9542-0a4b64c87185",
+          "width": 71,
+          "x": 751,
+          "y": 748,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 66.74285714285709,
+          "keepRatio": true,
+          "layer": "",
+          "name": "down_convey_begin",
+          "persistentUuid": "5d1bbf1b-6f73-458d-a60d-2c88ea7f51e7",
+          "width": 73,
+          "x": 672,
+          "y": 192,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 66.74285714285709,
+          "keepRatio": true,
+          "layer": "",
+          "name": "down_convey_middle",
+          "persistentUuid": "4b8e8942-fadb-4a30-9072-24dba6c22b89",
+          "width": 73,
+          "x": 672,
+          "y": 258,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 66.74285714285709,
+          "keepRatio": true,
+          "layer": "",
+          "name": "down_convey_middle",
+          "persistentUuid": "a8d7696e-f363-40a4-a4ba-0729c7af0f6d",
+          "width": 73,
+          "x": 672,
+          "y": 325,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 66.74285714285709,
+          "keepRatio": true,
+          "layer": "",
+          "name": "down_convey_middle",
+          "persistentUuid": "a41a966e-d103-4b0e-a6b7-c163cc76ae00",
+          "width": 73,
+          "x": 672,
+          "y": 392,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 66.74285714285709,
+          "keepRatio": true,
+          "layer": "",
+          "name": "down_convey_end",
+          "persistentUuid": "f98a139f-9b90-4149-9e3c-8fa36723935f",
+          "width": 73,
+          "x": 672,
+          "y": 458,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "",
+          "name": "right_convey_begin",
+          "persistentUuid": "f8ec8936-b380-4d71-95c7-ab8cdf7320d9",
+          "width": 50,
+          "x": 876,
+          "y": 403,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 49.8113207547169,
+          "keepRatio": true,
+          "layer": "",
+          "name": "right_convey_middle",
+          "persistentUuid": "a3883f89-c7ad-4281-9717-fb910b40508e",
+          "width": 165,
+          "x": 868,
+          "y": 403,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 49.8113207547169,
+          "keepRatio": true,
+          "layer": "",
+          "name": "right_convey_middle",
+          "persistentUuid": "d48122a7-e242-433d-a311-17dfac8aece0",
+          "width": 165,
+          "x": 917,
+          "y": 403,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 49.8113207547169,
+          "keepRatio": true,
+          "layer": "",
+          "name": "right_convey_middle",
+          "persistentUuid": "8d256cb4-6b5e-4074-8a60-c18e2001b02b",
+          "width": 165,
+          "x": 966,
+          "y": 403,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 50.28571428571426,
+          "keepRatio": true,
+          "layer": "",
+          "name": "convey_right_end",
+          "persistentUuid": "e7b39350-ac06-4124-9c77-f61317815891",
+          "width": 55,
+          "x": 1073,
+          "y": 403,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 38,
+          "keepRatio": true,
+          "layer": "",
+          "name": "left_laser_cutter",
+          "persistentUuid": "4362cd6c-182c-443d-98b1-55c7bb5b1d5a",
+          "width": 38,
+          "x": 1242,
+          "y": 722,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13843,6 +14057,58 @@
           "variables": [],
           "effects": [],
           "behaviors": [
+            {
+              "name": "SmoothCamera",
+              "type": "SmoothCamera::SmoothCamera",
+              "LeftwardSpeed": 0.9,
+              "RightwardSpeed": 0.9,
+              "UpwardSpeed": 0.9,
+              "DownwardSpeed": 0.9,
+              "FollowOnX": true,
+              "FollowOnY": true,
+              "FollowFreeAreaLeft": 0,
+              "FollowFreeAreaRight": 0,
+              "FollowFreeAreaTop": 0,
+              "FollowFreeAreaBottom": 0,
+              "CameraOffsetX": 0,
+              "CameraOffsetY": 0,
+              "CameraDelay": 0,
+              "ForecastTime": 0,
+              "ForecastHistoryDuration": 0,
+              "LogLeftwardSpeed": 2.0247e-320,
+              "LogRightwardSpeed": 2.0247e-320,
+              "LogDownwardSpeed": 2.0247e-320,
+              "LogUpwardSpeed": 2.0247e-320,
+              "DelayedCenterX": 2.0247e-320,
+              "DelayedCenterY": 2.0247e-320,
+              "ForecastHistoryMeanX": 2.0247e-320,
+              "ForecastHistoryMeanY": 2.0247e-320,
+              "ForecastHistoryVarianceX": 2.0247e-320,
+              "ForecastHistoryCovariance": 2.0247e-320,
+              "ForecastHistoryLinearA": 2.0247e-320,
+              "ForecastHistoryLinearB": 2.0247e-320,
+              "ForecastedX": 2.0247e-320,
+              "ForecastedY": 2.0247e-320,
+              "ProjectedNewestX": 2.0247e-320,
+              "ProjectedNewestY": 2.0247e-320,
+              "ProjectedOldestX": 2.0247e-320,
+              "ProjectedOldestY": 2.0247e-320,
+              "ForecastHistoryVarianceY": 2.0247e-320,
+              "Index": 2.0247e-320,
+              "CameraDelayCatchUpSpeed": 0,
+              "CameraExtraDelay": 2.0247e-320,
+              "WaitingSpeedXMax": 2.0247e-320,
+              "WaitingSpeedYMax": 2.0247e-320,
+              "WaitingEnd": 2.0247e-320,
+              "CameraDelayCatchUpDuration": 2.0247e-320,
+              "LeftwardSpeedMax": 9000,
+              "RightwardSpeedMax": 9000,
+              "UpwardSpeedMax": 9000,
+              "DownwardSpeedMax": 9000,
+              "OldX": 9000.000000007454,
+              "OldY": 9000.000000007454,
+              "IsCalledManually": false
+            },
             {
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
@@ -17545,6 +17811,244 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Crate",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Dynamic",
+              "bullet": false,
+              "fixedRotation": true,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 0,
+              "layers": 1,
+              "masks": 1
+            }
+          ],
+          "animations": [
+            {
+              "name": "side",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Arts/Sprites/Zone1/Crate/crate_side.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 14.5
+                          },
+                          {
+                            "x": 7,
+                            "y": 7
+                          },
+                          {
+                            "x": 32,
+                            "y": 7
+                          },
+                          {
+                            "x": 32,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 25.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Button",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Deactive",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Deactive2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 21
+                          },
+                          {
+                            "x": 32,
+                            "y": 21
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Active",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.4,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Arts\\Sprites\\Zone1\\Button2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 21
+                          },
+                          {
+                            "x": 32,
+                            "y": 21
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Arts\\Sprites\\Zone1\\Button3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 21
+                          },
+                          {
+                            "x": 32,
+                            "y": 21
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -17658,6 +18162,12 @@
                 "objectName": "robo"
               }
             ]
+          },
+          {
+            "objectName": "Crate"
+          },
+          {
+            "objectName": "Button"
           },
           {
             "objectName": "ActivateLaser"
@@ -18081,7 +18591,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Door",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -18372,6 +18881,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Robatic Arm And Convey Belt",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -18746,6 +19256,10 @@
           "type": "ScalableCapability::ScalableBehavior"
         },
         {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera"
+        },
+        {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
         },
@@ -18779,7 +19293,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.41943397827590684,
+        "zoomFactor": 0.22336005893811428,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -19815,6 +20329,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -19825,10 +20341,8 @@
               "gridOffsetX": 0,
               "gridOffsetY": 0,
               "maxSpeed": 200,
-              "name": "Pathfinding",
               "rotateObject": false,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             }
           ],
           "animations": [
